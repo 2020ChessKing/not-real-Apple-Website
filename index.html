@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Apple</title>
+
+        <style>
+            * {
+                font-family : Sofia Pro;
+                font-weight : 300;
+
+            }
+
+            body, ul, li{
+                margin : 0;
+                padding : 0;
+            }
+
+            p, li, h1, h2, h3, h4, h5{
+                color : black;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+            body{
+                background-color: white;
+            }
+
+            .wrapper{
+                width : 96%;
+                max-width: 1200px;
+                margin : 0 auto;
+                padding : 0 2%;
+            }
+
+            header{
+                background-color: #333333;
+                padding : 10px 0;
+            }
+
+            .logo{
+                margin : 0;
+                background : url(apple.png);
+                background-size : 30px 30px;
+                float: left;
+                width : 30px;
+                height : 30px;
+            }
+
+            header nav{
+                float : right;              
+            }
+
+            header:after{
+                content : '';
+                clear : both;
+                display : block;
+            }
+
+            header nav li{
+                list-style-type: none;
+                float : left;
+                margin-left : 50px;
+                margin-top : 0;
+            }
+
+            header nav li a{
+                text-decoration: none;
+                color : white;
+                font-size : 20px;
+            }
+
+            #main-banner{
+                width : 100%;
+                max-height : 500px;
+                overflow : hidden;
+            }
+
+            #main-banner img{
+                width : 100%;
+            }
+
+            #slider {
+                overflow: hidden;
+            }
+
+            #slides{
+                position : relative;
+                width : 500%;
+                margin : 0;
+                padding : 0;
+                text-align: left;
+                font-size: 0;
+                animation : 10s Slidy infinite;
+            }
+
+            #slides img{
+                width : 20%;
+                float : left;
+            }
+
+            .end h6{
+                margin : 1;
+                text-align: center;
+            }
+
+            #usp {
+                margin-top: 60px;
+            }
+
+            #usp li {
+                float : left;
+                width : 23%;
+                padding : 1%;
+                text-align: center;
+                list-style-type: none;
+            }
+
+            #usp li img{
+                height : 80px;
+                padding: 20px;
+                padding-bottom: 0px;
+                background-color: white;
+
+            }
+
+            #usp li h2{
+                font-size: 22px;
+                font-weight: 400px;
+            }
+
+            #usp:after{
+                content : '';
+                display : block;
+                clear: both;
+            }
+
+            #products {
+                padding-top : 30px;
+                margin-top : 30px;
+                border-top: 2px solid black;
+            }
+
+            #products li {
+                float : left;
+                width : 32%;
+                list-style-type: none;
+                text-align: center;
+                padding : 5px;
+            }
+
+            #products li img{
+                width : 100%;
+            }
+
+            #our-products{
+                text-align: center;
+            }
+
+            footer{
+                text-align : center;
+                margin : 500px;
+                padding-top: 100px;
+            }
+
+            .greet{
+                background-color: white;
+                font-family : fantasy;
+                font-size: 50px;
+                color : black;
+                padding-top: 50px;
+                padding-bottom : 50px;
+                text-align: center;
+            }
+
+            
+            .disclamer{
+                background-color: red ;
+                font-family : fantasy;
+                font-size: 20px;
+                color : black;
+                padding-top: 10px;
+                padding-bottom : 10px;
+                text-align: center;
+            }
+
+
+            /* Animation */
+            @keyframes Slidy{
+                0% { left : 0%;}
+                21% { left : 0%;}
+                25% { left : -100%;}
+                45% { left : -100%;}
+                50% { left : -200%;}
+                71% { left : -200%;}
+                75% { left : -300%;}
+                95% { left : -300%;}
+                100% { left : 0%;}
+            }
+        </style>
+    </head>
+    <body onload="myFunction()">
+        <!-- Header Starts -->
+        <header>
+            <div class = 'wrapper'>
+             <div class='logo'>          
+             </div>
+             <nav>
+                 <ul>
+                     <li><a href='#'>home</a></li>
+                     <li><a href='#'>about us</a></li>
+                     <li><a href='#'>donate</a></li>
+                     <li><a href='#'>help</a></li>
+                 </ul>
+             <nav>
+            </div>
+        </header>
+        <!-- Header Ends -->
+
+        <!-- Disclaimer -->
+        <div class = 'disclamer'>
+            <p>COPYRIGHT IS NOT INTENDED, WEBSITE MADE fOR EDUCATIONAL PURPOSES, THIS IS NOT AN OFFICIAL WEBPAGE, THIS IS NOT FROM APPLE, ARE YOU LOOKING FOR <a href = 'https://www.apple.com'>apple.com?</a></p>
+        </div>
+        <!-- Discalaimer -->
+
+        <!-- Greeting Starts -->
+        <div class = 'greet'>
+            <p id = 'namesec'></p>
+        </div>
+        <!-- Greeting Ends -->
+
+        <!-- Slider Starts -->
+        <div id='main-banner'>
+            <div id='slider'>
+                <div id='slides'>
+                    <img src = 'ipadpro.PNG'>
+                    <img src = 'macpro.PNG'>
+                    <img src = 'watch6.PNG'>
+                    <img src = 'imac.PNG'>
+                </div>
+            </div>
+        </div>
+        <!-- Slider Ends -->
+
+        <!-- USP Starts -->
+        <div class = "wrapper" >
+            <section id = 'usp' >
+               <div class = 'colorer'>
+                <ul>
+                    <li>
+                        <img src = 'shield.png' >
+                        <h2>Quality Products</h2>
+                    </li>
+                    <li>
+                        <img src = 'shop.png'>
+                        <h2>Multiple Stores</h2>
+                    </li>
+                    <li>
+                        <img src = 'call-center.png' >
+                        <h2>Open 24/7</h2>
+                    </li>
+                    <li>
+                        <img src = 'group.png' >
+                        <h2>Happy Customers</h2>
+                    </li>
+                </ul>
+               </div>
+                </section>
+            </section>
+        </div>
+        <!-- USP Ends -->
+
+        <!-- Products Starts -->
+        <div class='wrapper'>
+            <section id = 'products'>
+                <h1 id = 'our-products'>Our Products</h1>
+                <ul>
+                    <li>
+                        <img src = 'ipadproproduct.PNG'>
+                        <h2>Ipad Pro - Your Next Computer is Not a Computer</h2>
+                        <p>  It’s a magical piece of glass. It’s so fast most PC laptops can’t catch up. It has pro cameras that can transform reality. And you can use it with touch, pencil, keyboard, and now trackpad. It’s the new iPad Pro.</p>
+                    </li>
+                    <li>
+                        <img src = 'iphoneproduct.PNG'>
+                        <h2>Iphone 11 - Just the right amount of everything.</h2>
+                        <p>A new dual‑camera system captures more of what you see and love. The fastest chip ever in a smartphone and all‑day battery life let you do more and charge less. And the highest‑quality video in a smartphone, so your memories look better than ever.</p>
+                    </li>
+                    <li>
+                        <img src = 'imacproduct.PNG'>
+                        <h2>iMac - The all-in-one for all</h2>
+                        <p> If you can dream it, you can do it on iMac. It’s beautifully designed, incredibly intuitive, and packed with powerful tools that let you take any idea to the next level. And the new 27-inch model elevates the experience in every way, with faster processors and graphics, expanded memory and storage, enhanced audio and video capabilities, and an even more stunning Retina 5K display. It’s the desktop that does it all — better and faster than ever.</p>
+                    </li>
+                    <li>
+                        <img src = 'wathcproduct.PNG'>
+                        <h2>Apple Watch Series 6 - The Future of Health is on Your Wrist</h2>
+                        <p> Measure your blood oxygen level with a revolutionary new sensor and app. Take an ECG anytime, anywhere. See your fitness metrics at a glance with the enhanced Always-On Retina display. With Apple Watch Series 6 on your wrist, a healthier, more active, more connected life is within reach. </p>
+                    </li>
+                    <li>
+                        <img src = 'ipadairproduct.PNG'>
+                        <h2>iPad Air - Powerful. Colorful. Wonderful.</h2>
+                        <p>iPad Air does more than a computer in simpler, more magical ways. And now with more features and capabilities, it’s more versatile than ever.</p>
+                    </li>
+                    <li>
+                        <img src = 'macairproduct.PNG'>
+                        <h2>Macbook Air - Light. Speed.</h2>
+                        <p>The incredibly thin and light MacBook Air is now more powerful than ever. It features a brilliant Retina display, new Magic Keyboard, Touch ID, processors with up to twice the performance,1 faster graphics, and double the storage capacity. The sleek wedge-shaped design is created from 100 percent recycled aluminum, making it the greenest Mac ever.2 And with all-day battery life, our most popular Mac is your perfectly portable, do-it-all notebook.</p>
+                    </li>
+                    <li>
+                        <img src = 'macproproduct.PNG'>
+                        <h2>Macbook Pro - Power. Moves.</h2>
+                        <p>MacBook Pro elevates the notebook to a whole new level of performance and portability. Wherever your ideas take you, you’ll get there faster than ever with high‑performance processors and memory, advanced graphics, blazing‑fast storage, and more — all in a compact 3-pound package.</p>
+                    </li>
+                    <li>
+                        <img src = 'prodisplayproduct.PNG'>
+                        <h2>Pro Display XDR - Believing is seeing.</h2>
+                        <p>The first 32-inch Retina 6K display ever. Up to 1600 nits of brightness. An astonishing 1,000,000:1 contrast ratio and superwide viewing angle. Over a billion colors presented with exceptional accuracy. And dynamic range that transforms the professional workflow. Introducing Apple Pro Display XDR, the world’s best pro display.</p>
+                    </li>
+                    <li>
+                        <img src = 'ipadpoduct.PNG'>
+                        <h2>iPad - Delightfully capable. Surprisingly affordable.</h2>
+                        <p> The new iPad combines tremendous capability with unmatched ease of use and versatility. With the powerful A12 Bionic chip, support for Apple Pencil and the Smart Keyboard, and the amazing new things you can do with iPadOS 14, now there’s even more to love about iPad.</p>
+                    </li>
+                    <li>
+                        <img src = 'ipadminiproduct.PNG'>
+                        <h2>iPad Mini - Mini just got mightier.</h2>
+                        <p> iPad mini is beloved for its size and capability. And now there are even more reasons to love it. The A12 Bionic chip with Neural Engine. A 7.9‑inch Retina display with True Tone. And Apple Pencil, so you can capture your biggest ideas wherever they come to you. It’s still iPad mini. There’s just more of it than ever.</p>
+                    </li>
+                    <li>
+                        <img src = 'applewatchseproduct.PNG'>
+                        <h2>Apple Watch SE - Heavy on features. Light on price.</h2>
+                        <p>An expansive Retina display so you can see more at a glance. Advanced sensors to track all the ways you move. Powerful features to keep you healthy and safe. Apple Watch SE is a lot of watch for a lot less than you expected.</p>
+                    </li>
+                    <li>
+                        <img src = 'iphoneproduct11pro.PNG'>
+                        <h2>iPhone 11 Pro - Pro cameras. Pro display. Pro performance.</h2>
+                        <p>A transformative triple‑camera system that adds tons of capability without complexity. An unprecedented leap in battery life. And a mind‑blowing chip that doubles down on machine learning and pushes the boundaries of what a smartphone can do. Welcome to the first iPhone powerful enough to be called Pro.</p>
+                    </li>
+                    <li>
+                        <img src = 'iphoneproductse.PNG'>
+                        <h2>iPhone SE - Lots to love. Less to spend.</h2>
+                        <p> iPhone SE packs our most powerful chip into our most popular size at our most affordable price. It’s just what you’ve been waiting for. </p>
+                    </li>
+                    <li>
+                        <img src = 'imacpro.PNG'>
+                        <h2>iMac Pro - Power to change everything.</h2>
+                        <p>Say hello to a Mac that is extreme in every way. With the greatest performance, expansion, and configurability yet, it is a system created to let a wide range of professionals push the limits of what is possible.</p>
+                    </li>
+                    <li>
+                        <img src ='applewatch3product.PNG'>
+                        <h2>Apple Watch Series 3 - Good things come in 3.</h2>
+                        <p>1, 2, 3! Apple Watch Calling. With a unique design, beautiful software. Now you can call, text, and talk with your Apple Watch. This is the new Apple Watch Series 3</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <!-- Products Ends -->
+
+        <!-- Credits Start -->
+        <footer>
+            <ul>
+                <h3>Credits</h3>
+             <h6> Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></h6>
+             <h6> Images Taken From <a href = 'https://www.apple.com/'>Apple</a></h6>
+             <h6> Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></h6>
+             <h6> Icons made by <a href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></h6>
+             <h6> Icons made by <a href="https://www.flaticon.com/authors/prosymbols" title="Prosymbols">Prosymbols</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></h6>
+             <h6> Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></h6>  
+            </ul>
+            <!-- <h6> Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></h6>
+            <h6> Images Taken From <a href = 'https://www.apple.com/'>Apple</a></h6>
+            <h6> Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></h6>
+            <h6> Icons made by <a href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></h6>
+            <h6> Icons made by <a href="https://www.flaticon.com/authors/prosymbols" title="Prosymbols">Prosymbols</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></h6>
+            <h6> Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></h6>   -->
+            </footer>
+        <!-- Credits End -->
+
+        <!-- JS Code Starts -->
+        <script>
+
+            function myFunction(){
+                var name = prompt('Hello User, What is You Name', 'Doe');
+                var msg;
+                var date = new Date();
+                var hour = date.getHours();
+
+                if (hour < 12)
+                {
+                    msg = 'Hello ' + name + ' Good Morning';
+                    document.getElementById('namesec').innerHTML = msg;
+                }
+                else if (hour > 12 && hour < 16)
+                {
+                    msg = 'Hello ' + name + ' Good Afternoon';
+                    document.getElementById('namesec').innerHTML = msg;
+                }
+                else if (hour > 16 && hour < 23)
+                {
+                    msg = 'Hello ' + name + ' Good Evening';
+                    document.getElementById('namesec').innerHTML = msg;
+                }
+                else
+                {
+                    msg = 'Greetings of the Day';
+                    document.getElementById('namesec').innerHTML = msg;                
+                }
+            }
+        </script>
+
+    </body>
+
+</html>
